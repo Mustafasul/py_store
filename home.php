@@ -27,7 +27,7 @@
           </head>
              <body>
 	           <h2 style="color: blue"><center> Welcome to Home page </center></h2> <hr><hr>
-	           <a href="add_items.php" style="float: right;"> Add_Users</a>
+	           <a href="add_items.php" style="float: right;"> Add item</a>
 	           <table style="padding: 4px " border="3" align="center">
 	           	<tr>
 	           	  <th style="padding: 12px"> item_iD </th>
@@ -47,8 +47,8 @@
 	       <td> <?php echo $row["item_qty"]; ?> </td>
 	       <td> <?php echo $row["item_price"]; ?> </td>
 	       <td> <?php echo $row["total_price"]; ?> </td>
-	       <td> <a href="delete.php?item_iD = <?php echo $row['item_iD']; ?>" > Delete </a> </td>
-	       <td> <a href="update.php?item_iD= <?php echo $row['item_iD']; ?> "> Update </a> </td>    		
+	       <td> <a href="delete.php?itemID=<?php echo $row['item_iD']; ?>" > Delete </a> </td>
+	       <td> <a href="update.php?itemID=<?php echo $row['item_iD'];?> "> Update </a> </td>    		
 	   </tr>
 	   <?php }while  ($row = mysqli_fetch_assoc($recordset)) ;?>
 
